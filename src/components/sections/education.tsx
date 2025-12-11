@@ -13,10 +13,8 @@ const education = [
     period: '2023 - 2027',
     grade: 'CGPA: 8.9',
     highlights: [
-      'Specialization in Data Science and AI',
-      'Active member of technical clubs',
-      'Participated in multiple hackathons',
-      'Strong focus on practical projects'
+      'Data Science & AI specialization',
+      'Multiple hackathons'
     ]
   },
   {
@@ -27,10 +25,8 @@ const education = [
     period: '2021 - 2023',
     grade: 'Percentage: 94.16%',
     highlights: [
-      'Physics, Chemistry, Mathematics, Computer Science',
-      'Excellent academic performance',
-      'Foundation in STEM subjects',
-      'Developed interest in programming'
+      'PCMC stream',
+      'Strong STEM foundation'
     ]
   },
   {
@@ -41,17 +37,15 @@ const education = [
     period: '2020 - 2021',
     grade: 'Percentage: 94.56%',
     highlights: [
-      'Strong academic foundation',
-      'Consistent top performer',
-      'Active in co-curricular activities',
-      'Early interest in technology'
+      'Top academic performance',
+      'Co-curricular activities'
     ]
   }
 ]
 
 export function Education() {
   return (
-    <section id="education" className="py-20 bg-muted/30 px-6">
+    <section id="education" className="py-12 sm:py-20 bg-muted/30 px-4 sm:px-6">
       <div className="container max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

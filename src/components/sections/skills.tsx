@@ -7,27 +7,21 @@ import { Code, Brain, Database, Cloud, Terminal, Sparkles } from 'lucide-react'
 export function Skills() {
   const skillCategories = [
     {
-      title: 'Programming Languages',
+      title: 'Programming',
       icon: <Code className="w-6 h-6" />,
-      skills: ['C', 'Python', 'JavaScript', 'HTML', 'CSS'],
+      skills: ['Python', 'JavaScript', 'C/C++', 'TypeScript'],
       color: 'primary',
     },
     {
-      title: 'AI/ML & Data Science',
+      title: 'AI/ML',
       icon: <Brain className="w-6 h-6" />,
-      skills: ['Machine Learning', 'Scikit-learn', 'Pandas', 'NumPy'],
+      skills: ['TensorFlow', 'Scikit-learn', 'Pandas'],
       color: 'purple',
     },
     {
-      title: 'Databases',
-      icon: <Database className="w-6 h-6" />,
-      skills: ['MySQL', 'SQLite'],
-      color: 'blue',
-    },
-    {
-      title: 'Frameworks',
+      title: 'Web Dev',
       icon: <Cloud className="w-6 h-6" />,
-      skills: ['Flask', 'React', 'Tailwind CSS', 'Next.js'],
+      skills: ['React', 'Next.js', 'Node.js', 'Flask'],
       color: 'green',
     },
     {
@@ -56,7 +50,7 @@ export function Skills() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {skillCategories.map((category, idx) => (
             <motion.div
               key={category.title}

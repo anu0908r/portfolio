@@ -8,7 +8,7 @@ import { Download, Github, Linkedin, Mail, ArrowRight, Code2, Sparkles } from 'l
 
 export function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-16 sm:py-20">
       {/* Unique Animated Background - Floating Geometric Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -89,12 +89,11 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="text-lg text-muted-foreground leading-relaxed max-w-xl"
+              className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl"
             >
-              Passionate about building intelligent solutions through{' '}
-              <span className="text-primary font-semibold">AI/ML</span>,{' '}
-              <span className="text-violet-600 dark:text-violet-400 font-semibold">Full-Stack Development</span>, and{' '}
-              <span className="text-cyan-600 dark:text-cyan-400 font-semibold">IoT</span>. Currently pursuing BE at CMRIT with 8.9 CGPA.
+              Building intelligent solutions with{' '}
+              <span className="text-primary font-semibold">AI/ML</span> and{' '}
+              <span className="text-violet-600 dark:text-violet-400 font-semibold">Full-Stack Dev</span>. BE Student at CMRIT (CGPA 8.9).
             </motion.p>
 
             {/* CTA Buttons */}
@@ -102,15 +101,15 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-4 pt-4"
+              className="flex flex-col sm:flex-row gap-3 pt-4"
             >
-              <Button size="lg" asChild className="group bg-gradient-to-r from-violet-600 to-primary hover:from-violet-700 hover:to-primary/90">
+              <Button size="lg" asChild className="group bg-gradient-to-r from-violet-600 to-primary hover:from-violet-700 hover:to-primary/90 w-full sm:w-auto">
                 <Link href="#contact">
                   Get In Touch
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="group border-2">
+              <Button size="lg" variant="outline" asChild className="group border-2 w-full sm:w-auto">
                 <Link href="/1CR23CD007_ANANYA.U_RESUME1.pdf" download>
                   <Download className="mr-2 w-4 h-4 group-hover:animate-bounce" />
                   Resume

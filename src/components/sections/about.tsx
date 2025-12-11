@@ -30,19 +30,13 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="space-y-6"
+            className="space-y-4"
           >
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate Computer Science & Data Science student at CMR Institute of Technology, Bengaluru,
-              with a strong foundation in AI/ML, full-stack development, and IoT systems.
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              CS & Data Science student at CMRIT, Bengaluru. Building AI/ML applications, full-stack web solutions, and IoT systems.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              My journey in tech is driven by curiosity and a desire to build innovative solutions that make a difference.
-              I thrive on learning new technologies and applying them to real-world problems.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Currently maintaining a CGPA of 8.9, I'm eager to contribute to dynamic organizations where I can
-              apply my skills and continuously grow both professionally and personally.
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              CGPA 8.9 | Passionate about solving real-world problems with technology.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-4">

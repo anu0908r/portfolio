@@ -9,35 +9,28 @@ const certifications = [
     title: 'Analysis and Design of Algorithms',
     issuer: 'Coursera',
     platform: 'Online',
-    description: 'Comprehensive course covering algorithm design paradigms, complexity analysis, and optimization techniques.',
-    skills: ['Algorithm Design', 'Complexity Analysis', 'Problem Solving', 'Optimization']
+    description: 'Algorithm design paradigms and complexity analysis.',
+    skills: ['Algorithms', 'Complexity Analysis', 'Problem Solving']
   },
   {
     title: 'Data Structures',
     issuer: 'Udemy',
     platform: 'Online',
-    description: 'In-depth study of fundamental data structures and their applications in software development.',
-    skills: ['Arrays', 'Linked Lists', 'Trees', 'Graphs', 'Hash Tables']
+    description: 'Fundamental data structures and applications.',
+    skills: ['Arrays', 'Trees', 'Graphs', 'Hash Tables']
   },
   {
-    title: 'Python for Beginners',
+    title: 'Python Programming',
     issuer: 'Udemy',
     platform: 'Online',
-    description: 'Foundation course in Python programming covering syntax, data types, and core concepts.',
-    skills: ['Python Syntax', 'OOP', 'File Handling', 'Error Handling']
-  },
-  {
-    title: 'Programming in C',
-    issuer: 'Udemy',
-    platform: 'Online',
-    description: 'Complete C programming course focusing on system-level programming and memory management.',
-    skills: ['C Language', 'Pointers', 'Memory Management', 'System Programming']
+    description: 'Python fundamentals and OOP concepts.',
+    skills: ['Python', 'OOP', 'Data Structures']
   }
 ]
 
 export function Achievements() {
   return (
-    <section id="achievements" className="py-20 px-6">
+    <section id="achievements" className="py-12 sm:py-20 px-4 sm:px-6">
       <div className="container max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,7 +46,7 @@ export function Achievements() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
           {certifications.map((cert, index) => (
             <motion.div
               key={cert.title}

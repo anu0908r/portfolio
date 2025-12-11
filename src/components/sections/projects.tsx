@@ -6,42 +6,36 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 const projects = [
   {
     title: 'Education Portal',
-    description: 'An AI-powered education platform that provides personalized learning experiences using the Gemini API.',
-    tech: ['Python', 'Flask', 'Gemini API', 'SQLite', 'HTML/CSS', 'JavaScript'],
+    description: 'AI-powered platform for personalized learning using Gemini API.',
+    tech: ['Python', 'Flask', 'Gemini API', 'SQLite'],
     features: [
-      'AI-powered content generation',
-      'Personalized learning paths',
-      'Interactive quizzes and assessments',
-      'Progress tracking and analytics'
+      'AI content generation',
+      'Personalized learning paths'
     ]
   },
   {
-    title: 'Heart Disease Prediction System',
-    description: 'Machine learning application that predicts heart disease risk based on patient health metrics.',
-    tech: ['Python', 'Scikit-learn', 'Logistic Regression', 'Pandas', 'NumPy', 'Matplotlib'],
+    title: 'Heart Disease Prediction',
+    description: 'ML application predicting heart disease risk from health metrics.',
+    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
     features: [
-      'Predictive ML model with high accuracy',
-      'Interactive data visualization',
-      'Risk assessment reports',
-      'User-friendly interface'
+      'High-accuracy ML model',
+      'Interactive visualizations'
     ]
   },
   {
-    title: 'Home Automation System',
-    description: 'IoT-based home automation system enabling remote control of home appliances.',
-    tech: ['ESP32', 'C/C++', 'Blynk IoT', 'Arduino IDE'],
+    title: 'Home Automation',
+    description: 'IoT system for remote control of home appliances.',
+    tech: ['ESP32', 'C/C++', 'Blynk IoT'],
     features: [
-      'Remote device control via mobile app',
-      'Real-time monitoring',
-      'Automated scheduling',
-      'Voice control integration'
+      'Remote device control',
+      'Real-time monitoring'
     ]
   }
 ]
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="py-12 sm:py-20 px-4 sm:px-6">
       <div className="container max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +51,7 @@ export function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
