@@ -56,10 +56,11 @@ export function Skills() {
               key={category.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05, rotate: 2 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
             >
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 text-primary">
                     {category.icon}

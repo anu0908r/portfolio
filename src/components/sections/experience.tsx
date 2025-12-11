@@ -57,8 +57,11 @@ export function Experience() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-center mb-4">
-            Experience & <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Involvement</span>
+            Experience & <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Involvement</span> 🎪
           </h2>
+          <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">
+            Coding, learning & having fun! 🎉
+          </p>
           <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">
             Active participation in technical clubs, hackathons, and campus events
           </p>

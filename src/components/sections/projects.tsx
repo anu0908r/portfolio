@@ -44,10 +44,10 @@ export function Projects() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-center mb-4">
-            Featured <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Projects</span>
+            Featured <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Projects</span> 🚀
           </h2>
           <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">
-            A collection of projects showcasing my skills in AI, machine learning, and IoT development
+            Cool stuff I've built 🛠️✨
           </p>
         </motion.div>
 
@@ -57,10 +57,11 @@ export function Projects() {
               key={project.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.02, rotate: 0.5 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <Card className="h-full hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-xl">{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>

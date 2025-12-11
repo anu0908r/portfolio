@@ -54,10 +54,10 @@ export function Education() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-center mb-4">
-            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Education</span>
+            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Education</span> 🎓
           </h2>
           <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">
-            Academic journey showcasing consistent excellence and passion for technology
+            My academic journey 📖✨
           </p>
         </motion.div>
 

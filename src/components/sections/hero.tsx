@@ -53,8 +53,13 @@ export function Hero() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-violet-500/10 via-primary/10 to-cyan-500/10 border border-primary/20"
             >
-              <Sparkles className="w-4 h-4 text-primary animate-pulse" />
-              <span className="text-sm font-medium">Open to Opportunities</span>
+              <motion.div
+                animate={{ rotate: [0, 10, -10, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <Sparkles className="w-4 h-4 text-primary" />
+              </motion.div>
+              <span className="text-sm font-medium">✨ Open to Opportunities</span>
             </motion.div>
 
             {/* Main Heading */}
@@ -65,7 +70,11 @@ export function Hero() {
                 transition={{ delay: 0.3 }}
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
               >
-                <span className="block text-foreground">Hello, I'm</span>
+                <motion.span 
+                  className="block text-foreground"
+                  animate={{ scale: [1, 1.02, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >Hey there! 👋 I'm</motion.span>
                 <span className="block mt-2 bg-gradient-to-r from-violet-600 via-primary to-cyan-600 bg-clip-text text-transparent">
                   Ananya U
                 </span>

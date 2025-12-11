@@ -80,10 +80,10 @@ export function Contact() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-center mb-4">
-            Get In <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Touch</span>
+            Get In <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Touch</span> 💬
           </h2>
           <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">
-            Have a question or want to work together? Feel free to reach out!
+            Let's chat! Drop me a message ☕📧
           </p>
         </motion.div>
 
@@ -228,7 +228,7 @@ export function Contact() {
                   <Button
                     type="submit"
                     disabled={status === 'submitting'}
-                    className="w-full"
+                    className="w-full bg-gradient-to-r from-violet-600 to-primary hover:from-violet-700 hover:to-primary/90"
                   >
                     {status === 'submitting' ? (
                       'Sending...'

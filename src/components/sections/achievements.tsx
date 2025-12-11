@@ -39,10 +39,10 @@ export function Achievements() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-center mb-4">
-            Achievements & <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Certifications</span>
+            Achievements & <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Certifications</span> 🏆
           </h2>
           <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">
-            Professional certifications demonstrating commitment to continuous learning and skill development
+            Badges I've collected on my learning journey 📚✨
           </p>
         </motion.div>
 
@@ -52,10 +52,11 @@ export function Achievements() {
               key={cert.title}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.03, rotate: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+              <Card className="h-full hover:shadow-lg hover:shadow-violet-500/20 transition-all duration-300 hover:border-primary/50">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex-1">
