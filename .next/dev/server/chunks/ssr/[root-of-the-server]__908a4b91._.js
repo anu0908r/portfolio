@@ -96,7 +96,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 function Footer() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-        className: "relative border-t bg-gradient-to-b from-background to-muted/20 py-12 px-6",
+        className: "relative border-t bg-gradient-to-b from-background to-muted/20 py-8 sm:py-12 px-4 sm:px-6",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"
@@ -111,10 +111,10 @@ function Footer() {
                     className: "text-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mb-6",
+                            className: "mb-4 sm:mb-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-violet-600 via-primary to-cyan-600 text-white font-bold text-xl mb-3",
+                                    className: "inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-violet-600 via-primary to-cyan-600 text-white font-bold text-lg sm:text-xl mb-2 sm:mb-3",
                                     children: "A"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/layout/footer.tsx",
@@ -122,7 +122,7 @@ function Footer() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-2xl font-bold bg-gradient-to-r from-violet-600 via-primary to-cyan-600 bg-clip-text text-transparent mb-2",
+                                    className: "text-xl sm:text-2xl font-bold bg-gradient-to-r from-violet-600 via-primary to-cyan-600 bg-clip-text text-transparent mb-1 sm:mb-2",
                                     children: "Ananya U"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/layout/footer.tsx",
@@ -130,8 +130,8 @@ function Footer() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-muted-foreground",
-                                    children: "Computer Science & Data Science Student"
+                                    className: "text-sm sm:text-base text-muted-foreground",
+                                    children: "CS & Data Science Student 💻"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/layout/footer.tsx",
                                     lineNumber: 19,
@@ -144,7 +144,7 @@ function Footer() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-center gap-4 mb-8",
+                            className: "flex justify-center gap-3 sm:gap-4 mb-6 sm:mb-8",
                             children: [
                                 {
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__["Github"],
@@ -170,10 +170,10 @@ function Footer() {
                                     href: social.href,
                                     target: social.label !== 'Email' ? '_blank' : undefined,
                                     rel: social.label !== 'Email' ? 'noopener noreferrer' : undefined,
-                                    className: "w-10 h-10 rounded-full bg-muted hover:bg-gradient-to-br hover:from-violet-600 hover:to-primary hover:text-white transition-all duration-300 flex items-center justify-center hover:scale-110",
+                                    className: "w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-muted hover:bg-gradient-to-br hover:from-violet-600 hover:to-primary hover:text-white transition-all duration-300 flex items-center justify-center hover:scale-110",
                                     "aria-label": social.label,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(social.icon, {
-                                        className: "w-5 h-5"
+                                        className: "w-4 h-4 sm:w-5 sm:h-5"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/layout/footer.tsx",
                                         lineNumber: 39,
@@ -190,30 +190,20 @@ function Footer() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "space-y-2",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-muted-foreground",
-                                    children: [
-                                        "© ",
-                                        new Date().getFullYear(),
-                                        " Ananya U. All rights reserved."
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/layout/footer.tsx",
-                                    lineNumber: 45,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-muted-foreground flex items-center justify-center gap-2",
-                                    children: "Built by Ananya U"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/layout/footer.tsx",
-                                    lineNumber: 48,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                            className: "space-y-1 sm:space-y-2",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xs sm:text-sm text-muted-foreground",
+                                children: [
+                                    "© ",
+                                    new Date().getFullYear(),
+                                    " Ananya U ✨"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/layout/footer.tsx",
+                                lineNumber: 45,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/src/components/layout/footer.tsx",
                             lineNumber: 44,
                             columnNumber: 11

@@ -12,14 +12,14 @@ export function About() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5 }}
-      className="py-20 sm:py-24 bg-background px-6"
+      className="py-12 sm:py-16 bg-background px-6"
     >
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <p className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase mb-4">
+        <div className="mb-8 sm:mb-12">
+          <p className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase mb-4 text-left md:text-center">
             🚀 Get to know me
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-left md:text-center">
             About <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Me</span> 🎯
           </h2>
         </div>

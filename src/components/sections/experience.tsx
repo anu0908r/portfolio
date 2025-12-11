@@ -48,71 +48,62 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-12 sm:py-20 bg-muted/30 px-4 sm:px-6">
+    <section id="experience" className="py-8 sm:py-12 bg-muted/30 px-4 sm:px-6">
       <div className="container max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
+          className="mb-6 sm:mb-8"
         >
-          <p className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase mb-3 sm:mb-4">
+          <p className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase mb-2 text-left md:text-center">
             🎪 Where I've Been Active
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-left md:text-center mb-2">
             Experience & <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Involvement</span>
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground text-center mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
+          <p className="text-sm sm:text-base text-muted-foreground text-left md:text-center max-w-2xl mx-auto">
             Coding, learning & having fun! 🎉
           </p>
         </motion.div>
 
-        <div className="space-y-6">
+        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.organization}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
+              className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
             >
-              <Card className="hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                    <div>
-                      <CardTitle className="text-xl">{exp.role}</CardTitle>
-                      <CardDescription className="text-lg font-medium text-foreground mt-1">
-                        {exp.organization}
-                      </CardDescription>
-                    </div>
-                    <div className="flex flex-col text-sm text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4" />
-                        {exp.period}
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4" />
-                        {exp.location}
-                      </div>
-                    </div>
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-primary text-slate-500 group-[.is-active]:text-primary-foreground shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                <Calendar className="w-5 h-5" />
+              </div>
+              
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-slate-200 bg-white shadow-sm">
+                <div className="flex flex-col gap-1 mb-2">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-bold text-lg">{exp.role}</h3>
+                    <span className="text-xs font-medium text-muted-foreground border px-2 py-0.5 rounded">{exp.period}</span>
                   </div>
-                  <p className="text-muted-foreground mt-2">{exp.description}</p>
-                </CardHeader>
-                <CardContent>
-                  <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
-                    <Users className="w-4 h-4" />
-                    Key Highlights
-                  </h4>
-                  <ul className="space-y-2">
-                    {exp.highlights.map(highlight => (
-                      <li key={highlight} className="flex items-start text-sm text-muted-foreground">
-                        <span className="text-primary mr-2 mt-1">▸</span>
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+                  <div className="text-primary font-medium">{exp.organization}</div>
+                  <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                    <MapPin className="w-3 h-3" />
+                    {exp.location}
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">{exp.description}</p>
+                <ul className="space-y-1">
+                  {exp.highlights.map((item, i) => (
+                    <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
+                      <span className="mt-1.5 w-1 h-1 rounded-full bg-primary shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </motion.div>
           ))}
         </div>

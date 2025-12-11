@@ -71,18 +71,19 @@ export function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6">
+    <section id="contact" className="py-8 sm:py-12 px-4 sm:px-6">
       <div className="container max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
+          className="mb-8 sm:mb-12"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-left md:text-center mb-3 sm:mb-4">
             Get In <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Touch</span> 💬
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground text-center mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
+          <p className="text-sm sm:text-base text-muted-foreground text-left md:text-center max-w-2xl mx-auto px-4">
             Let's chat! Drop me a message ☕📧
           </p>https://github.com/anu0908r/weather
         </motion.div>

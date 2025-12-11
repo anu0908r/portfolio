@@ -8,44 +8,44 @@ export function Skills() {
   const skillCategories = [
     {
       title: 'Programming',
-      icon: <Code className="w-6 h-6" />,
+      icon: <Code className="w-5 h-5" />,
       skills: ['Python', 'JavaScript', 'C/C++', 'TypeScript'],
       color: 'primary',
     },
     {
       title: 'AI/ML',
-      icon: <Brain className="w-6 h-6" />,
+      icon: <Brain className="w-5 h-5" />,
       skills: ['TensorFlow', 'Scikit-learn', 'Pandas'],
       color: 'purple',
     },
     {
       title: 'Web Dev',
-      icon: <Cloud className="w-6 h-6" />,
+      icon: <Cloud className="w-5 h-5" />,
       skills: ['React', 'Next.js', 'Node.js', 'Flask'],
       color: 'green',
     },
     {
       title: 'Tools & Platforms',
-      icon: <Terminal className="w-6 h-6" />,
+      icon: <Terminal className="w-5 h-5" />,
       skills: ['GitHub', 'VS Code', 'Arduino IDE', 'Jupyter', 'Git'],
       color: 'orange',
     },
     {
       title: 'IoT & Embedded',
-      icon: <Sparkles className="w-6 h-6" />,
+      icon: <Sparkles className="w-5 h-5" />,
       skills: ['ESP32', 'Arduino', 'Blynk IoT', 'C/C++'],
       color: 'pink',
     },
   ]
 
   return (
-    <section id="skills" className="py-20 sm:py-24 bg-muted/30 px-6">
+    <section id="skills" className="py-8 sm:py-12 bg-muted/30 px-6">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <p className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase mb-3 sm:mb-4">
+        <div className="mb-6 sm:mb-8">
+          <p className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase mb-2 text-left md:text-center">
             ⚡ What I Know
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-left md:text-center">
             Technical <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Skills</span> 💻
           </h2>
         </div>
@@ -56,28 +56,28 @@ export function Skills() {
               key={category.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ scale: 1.05, rotate: 2 }}
+              whileHover={{ scale: 1.02 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
+              className="bg-background border rounded-lg p-4 hover:border-primary/50 transition-colors"
             >
-              <Card className="hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
-                <CardContent className="p-4 sm:p-6">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3 sm:mb-4 text-primary">
-                    {category.icon}
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">{category.title}</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                  {category.icon}
+                </div>
+                <h3 className="text-base sm:text-lg font-bold">{category.title}</h3>
+              </div>
+              
+              <div className="flex flex-wrap gap-1.5">
+                {category.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-2 py-1 bg-secondary text-secondary-foreground rounded-md text-xs font-medium"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>

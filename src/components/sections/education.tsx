@@ -45,72 +45,64 @@ const education = [
 
 export function Education() {
   return (
-    <section id="education" className="py-12 sm:py-20 bg-muted/30 px-4 sm:px-6">
+    <section id="education" className="py-8 sm:py-12 bg-muted/30 px-4 sm:px-6">
       <div className="container max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
+          className="mb-8 sm:mb-12"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-left md:text-center mb-2">
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Education</span> 🎓
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground text-center mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
+          <p className="text-sm sm:text-base text-muted-foreground text-left md:text-center max-w-2xl mx-auto">
             My academic journey 📖✨
           </p>
         </motion.div>
 
-        <div className="space-y-6">
+        <div className="space-y-8">
           {education.map((edu, index) => (
             <motion.div
               key={edu.institution}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+              initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
+              className="relative pl-6 border-l-2 border-primary/20 pb-8 last:pb-0 last:border-l-0"
             >
-              <Card className="hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
-                    <div className="flex-1">
-                      <CardTitle className="text-base sm:text-lg md:text-xl flex items-start gap-2 mb-2">
-                        <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-1" />
-                        <span className="line-clamp-2">{edu.degree}</span>
-                      </CardTitle>
-                      <CardDescription className="text-lg font-medium text-foreground">
-                        {edu.field}
-                      </CardDescription>
-                      <div className="mt-2 text-sm text-muted-foreground">
-                        <div className="font-medium">{edu.institution}</div>
-                        <div className="flex items-center gap-2 mt-1">
-                          <MapPin className="w-3 h-3" />
-                          {edu.location}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col text-sm">
-                      <div className="flex items-center gap-2 text-muted-foreground">
-                        <Calendar className="w-4 h-4" />
-                        {edu.period}
-                      </div>
-                      <div className="mt-2 text-lg font-bold text-primary">
-                        {edu.grade}
-                      </div>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="grid md:grid-cols-2 gap-2">
-                    {edu.highlights.map(highlight => (
-                      <li key={highlight} className="flex items-start text-sm text-muted-foreground">
-                        <span className="text-primary mr-2 mt-1">▸</span>
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-background" />
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold">{edu.degree}</h3>
+                  <div className="text-primary font-medium">{edu.field}</div>
+                </div>
+                <div className="text-sm font-mono text-muted-foreground bg-muted px-2 py-1 rounded self-start">
+                  {edu.period}
+                </div>
+              </div>
+              
+              <div className="mb-4">
+                <div className="text-base font-medium">{edu.institution}</div>
+                <div className="text-sm text-muted-foreground flex items-center gap-1">
+                  <MapPin className="w-3 h-3" />
+                  {edu.location}
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-4 items-center">
+                <div className="text-sm font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                  {edu.grade}
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {edu.highlights.map(highlight => (
+                    <span key={highlight} className="text-xs text-muted-foreground border px-2 py-1 rounded-full">
+                      {highlight}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
