@@ -20,12 +20,12 @@ const education = [
   {
     degree: 'Pre-University Course (PUC)',
     field: 'Science Stream',
-    institution: 'MES Acharya College of Science, Bangalore',
+    institution: 'MES College, Bangalore',
     location: 'Bangalore, Karnataka',
     period: '2021 - 2023',
     grade: 'Percentage: 94.16%',
     highlights: [
-      'PCMC stream',
+      'PCMB stream',
       'Strong STEM foundation'
     ]
   },
