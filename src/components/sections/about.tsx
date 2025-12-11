@@ -16,10 +16,10 @@ export function About() {
     >
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <p className="text-sm font-medium text-primary tracking-wider uppercase mb-4">
+          <p className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase mb-4">
             🚀 Get to know me
           </p>
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             About <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Me</span> 🎯
           </h2>
         </div>

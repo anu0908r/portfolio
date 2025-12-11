@@ -38,11 +38,11 @@ export function Achievements() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">
             Achievements & <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Certifications</span> 🏆
           </h2>
-          <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">
-            Badges I've collected on my learning journey 📚✨
+          <p className="text-sm sm:text-base text-muted-foreground text-center mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
+            Badges I've collected 📚✨
           </p>
         </motion.div>
 
@@ -60,9 +60,9 @@ export function Achievements() {
                 <CardHeader>
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex-1">
-                      <CardTitle className="text-xl flex items-center gap-2">
-                        <Award className="w-5 h-5 text-primary" />
-                        {cert.title}
+                      <CardTitle className="text-base sm:text-lg md:text-xl flex items-center gap-2">
+                        <Award className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                        <span className="line-clamp-2">{cert.title}</span>
                       </CardTitle>
                       <CardDescription className="mt-2 flex items-center gap-2">
                         <span className="font-medium text-foreground">{cert.issuer}</span>

@@ -68,10 +68,10 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
               >
                 <motion.span 
-                  className="block text-foreground"
+                  className="block text-foreground text-xl sm:text-2xl md:text-3xl lg:text-4xl"
                   animate={{ scale: [1, 1.02, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >Hey there! 👋 I'm</motion.span>
@@ -84,10 +84,10 @@ export function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                className="flex items-center gap-3"
+                className="flex items-center gap-2 sm:gap-3"
               >
-                <Code2 className="w-6 h-6 text-primary" />
-                <p className="text-xl sm:text-2xl text-muted-foreground font-medium">
+                <Code2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0" />
+                <p className="text-base sm:text-xl md:text-2xl text-muted-foreground font-medium">
                   Computer Science & Data Science
                 </p>
               </motion.div>
@@ -201,7 +201,7 @@ export function Hero() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1 }}
-                className="absolute -bottom-6 -left-6 bg-background/90 backdrop-blur-sm border rounded-2xl p-4 shadow-xl"
+                className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-background/90 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-violet-600 to-primary flex items-center justify-center text-white font-bold text-xl">
@@ -219,7 +219,7 @@ export function Hero() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.2 }}
-                className="absolute -top-6 -right-6 bg-background/90 backdrop-blur-sm border rounded-2xl px-4 py-3 shadow-xl"
+                className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 bg-background/90 backdrop-blur-sm border rounded-xl sm:rounded-2xl px-3 py-2 sm:px-4 sm:py-3 shadow-xl"
               >
                 <div className="text-center">
                   <div className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent">3+</div>

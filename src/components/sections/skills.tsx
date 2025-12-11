@@ -61,11 +61,11 @@ export function Skills() {
               transition={{ delay: idx * 0.1 }}
             >
               <Card className="hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 text-primary">
+                <CardContent className="p-4 sm:p-6">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3 sm:mb-4 text-primary">
                     {category.icon}
                   </div>
-                  <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">{category.title}</h3>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
                       <span

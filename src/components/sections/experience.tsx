@@ -56,10 +56,10 @@ export function Experience() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">
             Experience & <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Involvement</span> 🎪
           </h2>
-          <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground text-center mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
             Coding, learning & having fun! 🎉
           </p>
           <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">

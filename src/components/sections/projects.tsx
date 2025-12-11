@@ -43,10 +43,10 @@ export function Projects() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">
             Featured <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Projects</span> 🚀
           </h2>
-          <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground text-center mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
             Cool stuff I've built 🛠️✨
           </p>
         </motion.div>
@@ -63,8 +63,8 @@ export function Projects() {
             >
               <Card className="h-full hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
                 <CardHeader>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
+                  <CardTitle className="text-lg sm:text-xl">{project.title}</CardTitle>
+                  <CardDescription className="text-sm">{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
