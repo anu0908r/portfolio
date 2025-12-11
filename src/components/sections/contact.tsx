@@ -46,8 +46,8 @@ export function Contact() {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 9606301646',
-      href: 'tel:+919606301646'
+      value: '+918618989199',
+      href: 'tel:+918618989199'
     },
     {
       icon: MapPin,
@@ -84,7 +84,7 @@ export function Contact() {
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground text-center mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
             Let's chat! Drop me a message ☕📧
-          </p>
+          </p>https://github.com/anu0908r/weather
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
