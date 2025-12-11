@@ -41,12 +41,12 @@ export function Skills() {
   return (
     <section id="skills" className="py-20 sm:py-24 bg-muted/30 px-6">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-sm font-medium text-primary tracking-wider uppercase mb-4">
-            What I Know
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <p className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase mb-3 sm:mb-4">
+            ⚡ What I Know
           </p>
-          <h2 className="text-4xl font-bold">
-            Technical <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Skills</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+            Technical <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Skills</span> 💻
           </h2>
         </div>
 

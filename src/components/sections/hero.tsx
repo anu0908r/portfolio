@@ -37,21 +37,21 @@ export function Hero() {
         />
       </div>
 
-      <div className="container max-w-7xl mx-auto relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container max-w-7xl mx-auto relative z-10 px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content - Text */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="space-y-6"
+            className="space-y-5 sm:space-y-6 text-center lg:text-left"
           >
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-violet-500/10 via-primary/10 to-cyan-500/10 border border-primary/20"
+              className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-violet-500/10 via-primary/10 to-cyan-500/10 border border-primary/20 mx-auto lg:mx-0"
             >
               <motion.div
                 animate={{ rotate: [0, 10, -10, 0] }}
@@ -131,7 +131,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
-              className="flex gap-3 pt-4"
+              className="flex gap-3 pt-4 justify-center lg:justify-start"
             >
               {[
                 { icon: Github, href: 'https://github.com/anu0908r', label: 'GitHub' },
@@ -201,15 +201,15 @@ export function Hero() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1 }}
-                className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-background/90 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl"
+                className="absolute bottom-2 left-2 sm:-bottom-4 sm:-left-4 lg:-bottom-6 lg:-left-6 bg-background/95 backdrop-blur-sm border rounded-lg sm:rounded-xl lg:rounded-2xl p-2 sm:p-3 lg:p-4 shadow-xl"
               >
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-violet-600 to-primary flex items-center justify-center text-white font-bold text-xl">
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-violet-600 to-primary flex items-center justify-center text-white font-bold text-sm sm:text-lg lg:text-xl">
                     8.9
                   </div>
                   <div>
-                    <div className="text-sm font-semibold">CGPA</div>
-                    <div className="text-xs text-muted-foreground">Academic Excellence</div>
+                    <div className="text-xs sm:text-sm font-semibold">CGPA</div>
+                    <div className="text-[10px] sm:text-xs text-muted-foreground hidden sm:block">Academic Excellence</div>
                   </div>
                 </div>
               </motion.div>
@@ -219,11 +219,11 @@ export function Hero() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.2 }}
-                className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 bg-background/90 backdrop-blur-sm border rounded-xl sm:rounded-2xl px-3 py-2 sm:px-4 sm:py-3 shadow-xl"
+                className="absolute top-2 right-2 sm:-top-4 sm:-right-4 lg:-top-6 lg:-right-6 bg-background/95 backdrop-blur-sm border rounded-lg sm:rounded-xl lg:rounded-2xl px-2 py-1.5 sm:px-3 sm:py-2 lg:px-4 lg:py-3 shadow-xl"
               >
                 <div className="text-center">
-                  <div className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent">3+</div>
-                  <div className="text-xs text-muted-foreground">Projects</div>
+                  <div className="text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent">3+</div>
+                  <div className="text-[10px] sm:text-xs text-muted-foreground">Projects</div>
                 </div>
               </motion.div>
             </div>

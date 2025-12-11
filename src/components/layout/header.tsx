@@ -76,18 +76,26 @@ export function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t">
-          <nav className="flex flex-col space-y-3 p-4">
+        <div className="md:hidden border-t bg-background/95 backdrop-blur-xl">
+          <nav className="flex flex-col p-4 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium hover:text-primary"
+                className="text-sm font-medium py-3 px-4 rounded-lg hover:bg-muted hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
+            <div className="pt-3 mt-3 border-t">
+              <Button asChild size="sm" className="w-full gap-2 bg-gradient-to-r from-violet-600 to-primary hover:from-violet-700 hover:to-primary/90">
+                <Link href="/1CR23CD007_ANANYA.U_RESUME1.pdf" target="_blank" onClick={() => setMobileMenuOpen(false)}>
+                  <Download className="h-4 w-4" />
+                  Download Resume
+                </Link>
+              </Button>
+            </div>
           </nav>
         </div>
       )}
