@@ -66,7 +66,7 @@ export function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/vishwaksen21'
+      href: 'https://github.com/anu0908r'
     }
   ]
 

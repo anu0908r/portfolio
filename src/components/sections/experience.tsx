@@ -6,9 +6,9 @@ import { Calendar, MapPin, Users } from 'lucide-react'
 
 const experiences = [
   {
-    role: 'Member',
+    role: 'Participant',
     organization: 'GeeksforGeeks Club',
-    period: '2024 - Present',
+    period: '2024',
     location: 'CMR Institute of Technology',
     description: 'Active member of the GFG student chapter, participating in coding events, workshops, and technical discussions.',
     highlights: [
