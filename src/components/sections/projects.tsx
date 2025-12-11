@@ -2,8 +2,30 @@
 
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Github, ExternalLink } from 'lucide-react'
+import Link from 'next/link'
 
 const projects = [
+  {
+    title: 'Weather App',
+    description: 'Real-time weather application with location-based forecasts.',
+    tech: ['JavaScript', 'HTML', 'CSS', 'Weather API'],
+    features: [
+      'Real-time weather data',
+      'Location-based forecasts'
+    ],
+    link: 'https://github.com/anu0908r/weather'
+  },
+  {
+    title: 'Distributor Connect',
+    description: 'Platform connecting distributors with retailers for streamlined operations.',
+    tech: ['React', 'Node.js', 'MongoDB', 'Express'],
+    features: [
+      'Inventory management',
+      'Order tracking system'
+    ]
+  },
   {
     title: 'Education Portal',
     description: 'AI-powered platform for personalized learning using Gemini API.',
@@ -11,24 +33,6 @@ const projects = [
     features: [
       'AI content generation',
       'Personalized learning paths'
-    ]
-  },
-  {
-    title: 'Heart Disease Prediction',
-    description: 'ML application predicting heart disease risk from health metrics.',
-    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
-    features: [
-      'High-accuracy ML model',
-      'Interactive visualizations'
-    ]
-  },
-  {
-    title: 'Home Automation',
-    description: 'IoT system for remote control of home appliances.',
-    tech: ['ESP32', 'C/C++', 'Blynk IoT'],
-    features: [
-      'Remote device control',
-      'Real-time monitoring'
     ]
   }
 ]
@@ -91,6 +95,17 @@ export function Projects() {
                       ))}
                     </ul>
                   </div>
+                  {project.link && (
+                    <div className="pt-2">
+                      <Button asChild size="sm" variant="outline" className="w-full group">
+                        <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
+                          View on GitHub
+                          <ExternalLink className="w-3 h-3 ml-2 opacity-50" />
+                        </Link>
+                      </Button>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
